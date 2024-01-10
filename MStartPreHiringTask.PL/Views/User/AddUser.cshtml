@@ -1,0 +1,28 @@
+﻿@using MStartPreHiringTask.DAL.Models.User;
+@model User
+@{
+    ViewData["Title"] = "AddUser";
+}
+
+<h1>Add User</h1>
+
+<br />
+<br />
+
+<form asp-action="AddUser">
+    <div asp-validation-summary="All"></div> @*List the whole error message*@
+   
+    <partial name="PartialViews/AddEditUserPartialView"/>
+
+    <input type ="submit" value="Save" name="Command" class="btn btn-primary" />
+    <input type="submit" value="Save and Continue" name="Command" class="btn btn-outline-primary" />
+    <a asp-action="Index" class="btn btn-light">Back to List</a>
+
+
+</form>
+
+@section ValidationScript{
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

@@ -1,0 +1,15 @@
+﻿@using MStartPreHiringTask.DAL.Models.User;
+@model User
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Users Details</h1>
+
+
+<div>
+    <partial name="PartialViews/DetailsDeleteUserPartialView" />
+
+    <a asp-action="Edit" class="btn btn-secondary">Edit</a>
+    <a asp-action="Index" class="btn btn-light">Back to List</a>
+</div>

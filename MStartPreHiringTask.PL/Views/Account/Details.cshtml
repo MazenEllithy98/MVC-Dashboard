@@ -1,0 +1,15 @@
+﻿@using MStartPreHiringTask.DAL.Models.Account;
+@model Account
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Accounts Details</h1>
+
+
+<div>
+    <partial name="PartialViews/DetailsDeleteAccountPartialView" />
+
+    <a asp-action="Edit" class="btn btn-secondary">Edit</a>
+    <a asp-action="Index" class="btn btn-light">Back to List</a>
+</div>
